@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IllúzióStúdió - Bűvész Videók</title>
+    <style>
+        /* Modern, sötét és misztikus dizájn */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #121214;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* Fejléc stílusai */
+        header {
+            background: linear-gradient(135deg, #1e1e24 0%, #0a0a0c 100%);
+            padding: 30px 20px;
+            text-align: center;
+            border-bottom: 2px solid #6c5ce7;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+
+        header h1 span {
+            color: #6c5ce7; /* Lila kiemelés a misztikus hangulathoz */
+        }
+
+        header p {
+            color: #a0a0a5;
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+
+        /* Fő tartalom */
+        main {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .intro p {
+            font-size: 1.2rem;
+            color: #e0e0e6;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Videó galéria rács (Grid) */
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        /* Videó kártyák */
+        .video-card {
+            background-color: #1c1c21;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .video-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(108, 92, 231, 0.3);
+        }
+
+        /* Reszponzív videó beágyazás container */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 képarány */
+            height: 0;
+            overflow: hidden;
+            background-color: #000;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .video-info {
+            padding: 20px;
+        }
+
+        .video-info h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        .video-info p {
+            color: #aaa;
+            font-size: 0.95rem;
+        }
+
+        /* Lábléc */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #666;
+            font-size: 0.9rem;
+            border-top: 1px solid #1c1c21;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Illúzió<span>Stúdió</span></h1>
+        <p>Ahol a valóság és a varázslat találkozik</p>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Legújabb Bűvésztrükkök</h2>
+            <p>Lépj be az illúziók világába! Nézd meg a legfrissebb videóimat, ahol kártyatrükköket, gondolatolvasást és látványos mutatványokat láthatsz.</p>
+        </section>
+
+        <section class="video-grid">
+            
+            <div class="video-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>A Hihetetlen Kártyatrükk</h3>
+                    <p>Ebben a videóban egy olyan kártyatrükköt mutatok be, amit bárki megtanulhat, mégis mindenkinek leesik tőle az álla.</p>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Gondolatolvasás?</h3>
+                    <p>Kitalálom, hogy mire gondolsz, még a képernyőn keresztül is. Készülj fel az illúzióra!</p>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <h3>Érmevarázs Közelről</h3>
+                    <p>Mikro-mágia a javából. Hogyan tűnik el egy százas a puszta kezemben? Nézd meg lassítva!</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 IllúzióStúdió. Minden jog fenntartva.</p>
+    </footer>
+
+</body>
+</html>
